@@ -3,16 +3,28 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DynaPuff:wdth,wght@75..100,400..700&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="css/style.css" />
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.6.0/moment-timezone-with-data-1970-2030.min.js"></script>
 		<title>World Clock</title>
 	</head>
 	<body>
+		<h1>
+			World<img
+				src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/178/093/original/time.png?1770564298"
+				alt="clock icon"
+				class="clock-icon"
+			/>Clock
+		</h1>
 		<div class="container">
-			<h1>World Clock</h1>
 			<select name="" id="city">
-				<option value="" selected> Select a city</option>
+				<option value="" selected>Select a city</option>
 				<option value="current">My location</option>
 				<option value="Australia/Brisbane">Brisbane</option>
 				<option value="America/Chicago">Chicago</option>
@@ -22,22 +34,22 @@
 			<div id="cities">
 				<div class="city" id="los-angeles">
 					<div>
-                        <div class="date"></div>
-						<h2>Los Angeles 🇺🇸</h2>
+						<div class="date"></div>
+						<h2>Los Angeles</h2>
 					</div>
 					<div class="time"></div>
 				</div>
 				<div class="city" id="paris">
 					<div>
-                        <div class="date"></div>
-						<h2>Paris 🇫🇷󠁧󠁢</h2>
+						<div class="date"></div>
+						<h2>Paris</h2>
 					</div>
 					<div class="time"></div>
 				</div>
 				<div class="city" id="dakar">
 					<div>
-                        <div class="date"></div>
-						<h2>Dakar 🇸🇳</h2>
+						<div class="date"></div>
+						<h2>Dakar</h2>
 					</div>
 					<div class="time"></div>
 				</div>
@@ -45,7 +57,10 @@
 		</div>
 		<footer>
 			<p>
-				<a href="" target="_blank">Open source project</a> by
+				<a href="https://github.com/nina-jalen/World-Clock" target="_blank"
+					>Coded</a
+				>
+				by
 				<a href="https://github.com/nina-jalen" target="_blank">Nina</a>
 			</p>
 		</footer>
