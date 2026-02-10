@@ -1,38 +1,37 @@
 function updateTime() {
-	//  Los Angeles
-	let losAngelesElement = document.querySelector("#los-angeles");
-	if (losAngelesElement) {
-		let losAngelesDateElement = losAngelesElement.querySelector(".date");
-		let losAngelesTimeElement = losAngelesElement.querySelector(".time");
+	let martiniqueElement = document.querySelector("#martinique");
+	if (martiniqueElement) {
+		let martiniqueDateElement = martiniqueElement.querySelector(".date");
+		let martiniqueTimeElement = martiniqueElement.querySelector(".time");
 
-		let losAngelesTime = moment().tz("America/Los_Angeles");
+		let martiniqueTime = moment().tz("America/Martinique");
 
-		losAngelesDateElement.innerHTML = losAngelesTime.format("ddd, D MMM");
-		losAngelesTimeElement.innerHTML = losAngelesTime.format(
+		martiniqueDateElement.innerHTML = martiniqueTime.format("ddd, D MMM");
+		martiniqueTimeElement.innerHTML = martiniqueTime.format(
 			"hh:mm:ss[<small>]A[</small>]",
 		);
 	}
-	// Paris
-	let parisElement = document.querySelector("#paris");
-	if (parisElement) {
-		let parisDateElement = parisElement.querySelector(".date");
-		let parisTimeElement = parisElement.querySelector(".time");
-		let parisTime = moment().tz("Europe/Paris");
 
-		parisDateElement.innerHTML = parisTime.format("ddd, D MMM");
-		parisTimeElement.innerHTML = parisTime.format(
+	let viennaElement = document.querySelector("#vienna");
+	if (viennaElement) {
+		let viennaDateElement = viennaElement.querySelector(".date");
+		let viennaTimeElement = viennaElement.querySelector(".time");
+		let viennaTime = moment().tz("Europe/Vienna");
+
+		viennaDateElement.innerHTML = viennaTime.format("ddd, D MMM");
+		viennaTimeElement.innerHTML = viennaTime.format(
 			"hh:mm:ss[<small>]A[</small>]",
 		);
 	}
-	// Dakar
-	let dakarElement = document.querySelector("#dakar");
-	if (dakarElement) {
-		let dakarDateElement = dakarElement.querySelector(".date");
-		let dakarTimeElement = dakarElement.querySelector(".time");
-		let dakarTime = moment().tz("Africa/Dakar");
 
-		dakarDateElement.innerHTML = dakarTime.format("ddd, D MMM");
-		dakarTimeElement.innerHTML = dakarTime.format(
+	let bahrainElement = document.querySelector("#bahrain");
+	if (bahrainElement) {
+		let bahrainDateElement = bahrainElement.querySelector(".date");
+		let bahrainTimeElement = bahrainElement.querySelector(".time");
+		let bahrainTime = moment().tz("Asia/Bahrain");
+
+		bahrainDateElement.innerHTML = bahrainTime.format("ddd, D MMM");
+		bahrainTimeElement.innerHTML = bahrainTime.format(
 			"hh:mm:ss[<small>]A[</small>]",
 		);
 	}
@@ -58,7 +57,15 @@ function updateCity(event) {
     </div>
     <div class="time">${cityTime.format("hh:mm:ss")}<small>${cityTime.format("A")}</small></div>
     </div>
-	<a href="/">All cities</a>`;
+	<a href="/">
+  <img 
+    src="img/back.png" 
+    alt="Go back"
+    class="go-back-icon"
+    href="/"
+  >
+</a>
+    `;
 }
 
 updateTime();

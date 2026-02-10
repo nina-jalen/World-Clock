@@ -4,13 +4,30 @@ body {
 	font-weight: 500;
 	font-variation-settings: "wdth" 85;
 	color: rgb(26, 32, 44);
+	background-repeat: no-repeat;
 	background: linear-gradient(
-		to right,
-		rgb(248, 126, 126) -0.5%,
-		rgb(251, 206, 143) 35.3%,
-		rgb(184, 252, 233) 67.2%,
-		rgb(118, 162, 229) 92.3%
+		45deg,
+		#fcecc9,
+		#fbcdf2,
+		#cfffbf,
+		#bee6fa,
+		#e8befa,
+		#fcecc9
 	);
+	background-size: 600% 600%;
+	animation: cloudyRainbow 20s ease infinite;
+}
+
+@keyframes cloudyRainbow {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 h1 {
@@ -30,12 +47,14 @@ h2 {
 	line-height: 1;
 }
 
-.clock-icon {
-	width: 80px;
-	vertical-align: middle;
-	filter: brightness(0) saturate(100%) invert(14%) sepia(4%) saturate(3741%)
-		hue-rotate(183deg) brightness(91%) contrast(101%);
-	/* margin: 0 10px; */
+.go-back-icon {
+	width: 40px;
+	height: auto;
+	display: block;
+	margin: 20px auto;
+	filter: brightness(0) saturate(100%) invert(7%) sepia(5%) saturate(6441%)
+		hue-rotate(183deg) brightness(92%) contrast(87%);
+	opacity: 0.9;
 }
 
 .container {
@@ -95,7 +114,6 @@ select::picker(select) {
 	display: flex;
 	justify-content: space-between;
 	padding: 20px 15px;
-	/* border: 1px solid rgba(0, 0, 0, 0.1); */
 	opacity: 0.95;
 }
 
@@ -116,6 +134,7 @@ select::picker(select) {
 	font-size: 48px;
 	font-weight: 500;
 	font-variation-settings: "wdth" 85;
+	opacity: 0.95;
 }
 
 .time small {
