@@ -7,15 +7,15 @@ body {
 	background-repeat: no-repeat;
 	background: linear-gradient(
 		45deg,
-		#fcecc9,
-		#fbcdf2,
-		#cfffbf,
-		#bee6fa,
-		#e8befa,
-		#fcecc9
+		rgb(252, 236, 201),
+		rgb(251, 205, 242),
+		rgb(207, 255, 191),
+		rgb(190, 230, 250),
+		rgb(232, 190, 250),
+		rgb(252, 236, 201)
 	);
 	background-size: 600% 600%;
-	animation: cloudyRainbow 20s ease infinite;
+	animation: cloudyRainbow 35s ease infinite;
 }
 
 @keyframes cloudyRainbow {
@@ -33,10 +33,9 @@ body {
 h1 {
 	text-align: center;
 	font-size: 66px;
-	margin-top: 100px;
-	font-optical-sizing: auto;
 	font-weight: 600;
 	font-variation-settings: "wdth" 100;
+	margin-top: 100px;
 	opacity: 0.95;
 }
 
@@ -60,10 +59,10 @@ h2 {
 .container {
 	max-width: 450px;
 	margin: 60px auto 30px;
-	background: rgba(255, 255, 255, 0.8);
-	backdrop-filter: blur(10px);
+	background: rgba(255, 255, 255, 0.9);
 	padding: 24px 32px;
 	border-radius: 40px;
+	backdrop-filter: blur(10px);
 	box-shadow:
 		0px 1px 3px rgba(0, 0, 0, 0.12),
 		0px 4px 8px rgba(0, 0, 0, 0.14),
@@ -147,7 +146,7 @@ footer {
 	font-size: 10px;
 	color: rgb(26, 32, 44);
 	opacity: 0.7;
-	font-weight: 500;
+	font-weight: 600;
 	font-variation-settings: "wdth" 100;
 }
 
