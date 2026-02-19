@@ -70,7 +70,6 @@ h2 {
 }
 
 select {
-	display: block;
 	margin: 20px auto;
 	width: 40%;
 	background-color: transparent;
@@ -85,6 +84,7 @@ select {
 		0 2px 4px rgba(0, 0, 0, 0.08);
 	appearance: base-select;
 	cursor: pointer;
+	display: flex;
 }
 
 select::picker(select) {
